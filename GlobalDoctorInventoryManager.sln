@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalDoctorInventoryManager", "GlobalDoctorInventoryManager\GlobalDoctorInventoryManager.csproj", "{0D1C3471-AA26-45AD-9E7B-8EB66B7EF121}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{353630B7-DBB0-4A5E-8B6C-B914D8AF1983}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalDoctorInventoryServer", "GlobalDoctorInventoryServer\GlobalDoctorInventoryServer.csproj", "{B6C7698D-AE75-4081-88B9-6DD729135A44}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D1C3471-AA26-45AD-9E7B-8EB66B7EF121}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D1C3471-AA26-45AD-9E7B-8EB66B7EF121}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D1C3471-AA26-45AD-9E7B-8EB66B7EF121}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D1C3471-AA26-45AD-9E7B-8EB66B7EF121}.Release|Any CPU.Build.0 = Release|Any CPU
+		{353630B7-DBB0-4A5E-8B6C-B914D8AF1983}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{353630B7-DBB0-4A5E-8B6C-B914D8AF1983}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{353630B7-DBB0-4A5E-8B6C-B914D8AF1983}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{353630B7-DBB0-4A5E-8B6C-B914D8AF1983}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6C7698D-AE75-4081-88B9-6DD729135A44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6C7698D-AE75-4081-88B9-6DD729135A44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6C7698D-AE75-4081-88B9-6DD729135A44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6C7698D-AE75-4081-88B9-6DD729135A44}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
