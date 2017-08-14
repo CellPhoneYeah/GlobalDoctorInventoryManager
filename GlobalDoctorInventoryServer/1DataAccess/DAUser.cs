@@ -10,45 +10,108 @@ namespace GlobalDoctorInventoryServer
 {
     internal class DAUser
     {
-        private GDIM_DataEntities context;
+        /// <summary>
+        /// Use to commit transaction
+        /// </summary>
+        public GDIM_DataEntities Context
+        {
+            get
+            {
+                if (Context == null)
+                    Context = new GDIM_DataEntities();
+                return Context;
+            }
+            set
+            {
+                Context = value;
+            }
+        }
+        /// <summary>
+        /// get user
+        /// </summary>
+        /// <param name="Conditions"></param>
+        /// <returns></returns>
         public IEnumerable<GDIM_User> GetUsers(Func<GDIM_User, bool> Conditions)
         {
             try
             {
-                using ( context = new GDIM_DataEntities())
+                using (Context)
                 {
-                    IEnumerable<GDIM_User> users = context.GDIM_User.Where(Conditions);
+                    IEnumerable<GDIM_User> users = Context.GDIM_User.Where(Conditions);
                     return users;
                 }
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw new Exception("get users message failed "+ex.Message);
             }
         }
 
-        public int DeleteUsers(GDIM_User userToDelete)
+        /// <summary>
+        /// delete user
+        /// </summary>
+        /// <param name="userToDelete"></param>
+        /// <returns></returns>
+        public bool DeleteUsers(GDIM_User userToDelete)
         {
-            int delUserNum = -1;
-
-            return delUserNum;
-        }
-
-        public int UpdateUsers(GDIM_User userToUpdate)
-        {
-            GDIM_User originUser = null;
-            using (context = new GDIM_DataEntities())
+            try
             {
-                originUser = context.GDIM_User.Where(x => x.User_ID == userToUpdate.User_ID)
-                    .FirstOrDefault<GDIM_User>();
-                originUser.User_Image = userToUpdate.User_Image;
+                using (Context)
+                {
+                    Context.GDIM_User.Remove(userToDelete);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("delete user failed" + ex.Message);
+            }
+            return true;
+        }
+
+        /// <summary>
+        /// update user
+        /// </summary>
+        /// <param name="userToUpdate"></param>
+        /// <returns></returns>
+        public bool UpdateUsers(GDIM_User userToUpdate)
+        {
+            try
+            {
+                GDIM_User originUser = null;
+                using (Context)
+                {
+
+                    originUser = Context.GDIM_User.Where(x => x.User_ID == userToUpdate.User_ID)
+                                .FirstOrDefault<GDIM_User>();
+                    EntityHelper.ShallowCopy<GDIM_User>(originUser, userToUpdate);
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("update user failed" + ex.Message);
             }
         }
 
-        public string InsertUsers()
+        /// <summary>
+        /// insert user
+        /// </summary>
+        /// <param name="userToInsert"></param>
+        /// <returns></returns>
+        public bool InsertUsers(GDIM_User userToInsert)
         {
-            string key = string.Empty;
-            return key;
+            try
+            {
+                using (Context)
+                {
+                    Context.GDIM_User.Add(userToInsert);
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("insert user failed" + ex.Message);
+            }
         }
     }
 }

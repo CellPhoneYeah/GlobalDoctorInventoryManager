@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GDIM_DataModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="GDIM_DataModelStoreContainer">
+    <EntitySet Name="GDIM_Dict_Medicine" EntityType="GDIM_DataModel.Store.GDIM_Dict_Medicine" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GDIM_Dict_Medicine_Type" EntityType="GDIM_DataModel.Store.GDIM_Dict_Medicine_Type" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GDIM_Dict_Productor" EntityType="GDIM_DataModel.Store.GDIM_Dict_Productor" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GDIM_Dict_Specification" EntityType="GDIM_DataModel.Store.GDIM_Dict_Specification" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GDIM_Function" EntityType="GDIM_DataModel.Store.GDIM_Function" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GDIM_Function_Role" EntityType="GDIM_DataModel.Store.GDIM_Function_Role" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GDIM_Inventory" EntityType="GDIM_DataModel.Store.GDIM_Inventory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GDIM_Role" EntityType="GDIM_DataModel.Store.GDIM_Role" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GDIM_Stock_In" EntityType="GDIM_DataModel.Store.GDIM_Stock_In" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GDIM_Stock_Out" EntityType="GDIM_DataModel.Store.GDIM_Stock_Out" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GDIM_User" EntityType="GDIM_DataModel.Store.GDIM_User" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GDIM_User_Role" EntityType="GDIM_DataModel.Store.GDIM_User_Role" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="GDIM_Dict_Medicine">
+    <Key>
+      <PropertyRef Name="Me_ID" />
+    </Key>
+    <Property Name="Me_ID" Type="varchar" Nullable="false" MaxLength="32" />
+    <Property Name="Me_Trade_Name_E" Type="varchar" MaxLength="80" />
+    <Property Name="Me_Chemical_Name" Type="varchar" MaxLength="80" />
+    <Property Name="Me_Trade_Name_C" Type="varchar" MaxLength="80" />
+    <Property Name="Me_Specification_ID" Type="varchar" MaxLength="32" />
+    <Property Name="Me_Status" Type="int" />
+    <Property Name="Me_Unit_Price" Type="decimal" Precision="16" Scale="2" />
+    <Property Name="Me_Productor_ID" Type="varchar" MaxLength="32" />
+    <Property Name="Me_Type_ID" Type="varchar" MaxLength="32" />
+  </EntityType>
+  <EntityType Name="GDIM_Dict_Medicine_Type">
+    <Key>
+      <PropertyRef Name="Me_Type_Id" />
+    </Key>
+    <Property Name="Me_Type_Id" Type="varchar" Nullable="false" MaxLength="32" />
+    <Property Name="Me_Type_Name" Type="varchar" MaxLength="80" />
+  </EntityType>
+  <EntityType Name="GDIM_Dict_Productor">
+    <Key>
+      <PropertyRef Name="Pro_ID" />
+    </Key>
+    <Property Name="Pro_ID" Type="varchar" Nullable="false" MaxLength="32" />
+    <Property Name="Pro_name" Type="varchar" MaxLength="80" />
+  </EntityType>
+  <EntityType Name="GDIM_Dict_Specification">
+    <Key>
+      <PropertyRef Name="Sp_ID" />
+    </Key>
+    <Property Name="Sp_ID" Type="varchar" Nullable="false" MaxLength="32" />
+    <Property Name="Sp_Name" Type="varchar" MaxLength="80" />
+  </EntityType>
+  <EntityType Name="GDIM_Function">
+    <Key>
+      <PropertyRef Name="Func_ID" />
+    </Key>
+    <Property Name="Func_ID" Type="varchar" Nullable="false" MaxLength="32" />
+    <Property Name="Func_Name" Type="varchar" MaxLength="80" />
+    <Property Name="Func_Code" Type="varchar" MaxLength="50" />
+    <Property Name="Func_Type" Type="varchar" MaxLength="32" />
+    <Property Name="Func_Parent_ID" Type="varchar" MaxLength="32" />
+    <Property Name="Func_Sequence_Number" Type="int" />
+  </EntityType>
+  <EntityType Name="GDIM_Function_Role">
+    <Key>
+      <PropertyRef Name="Func_ID" />
+      <PropertyRef Name="Role_ID" />
+    </Key>
+    <Property Name="Func_ID" Type="varchar" Nullable="false" MaxLength="32" />
+    <Property Name="Role_ID" Type="varchar" Nullable="false" MaxLength="32" />
+  </EntityType>
+  <EntityType Name="GDIM_Inventory">
+    <Key>
+      <PropertyRef Name="Inv_ID" />
+    </Key>
+    <Property Name="Inv_ID" Type="varchar" Nullable="false" MaxLength="32" />
+    <Property Name="Inv_Me_ID" Type="varchar" MaxLength="32" />
+    <Property Name="Inv_Me_Specification_ID" Type="varchar" MaxLength="32" />
+    <Property Name="Inv_Me_Unit_Price" Type="decimal" Precision="16" Scale="2" />
+    <Property Name="Inv_Me_Quantity" Type="decimal" Precision="16" Scale="2" />
+    <Property Name="Inv_Date" Type="datetime" />
+    <Property Name="Inv_Remark" Type="varchar" MaxLength="100" />
+    <Property Name="Inv_SI_ID" Type="varchar" MaxLength="32" />
+    <Property Name="Inv_Flag" Type="int" />
+  </EntityType>
+  <EntityType Name="GDIM_Role">
+    <Key>
+      <PropertyRef Name="Role_ID" />
+    </Key>
+    <Property Name="Role_ID" Type="varchar" Nullable="false" MaxLength="32" />
+    <Property Name="Role_Name" Type="varchar" MaxLength="80" />
+    <Property Name="Role_Description" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="GDIM_Stock_In">
+    <Key>
+      <PropertyRef Name="SI_ID" />
+    </Key>
+    <Property Name="SI_ID" Type="varchar" Nullable="false" MaxLength="32" />
+    <Property Name="SI_Me_ID" Type="varchar" MaxLength="32" />
+    <Property Name="SI_Me_Specification_ID" Type="varchar" MaxLength="32" />
+    <Property Name="SI_Me_Unit_Price" Type="decimal" Precision="16" Scale="2" />
+    <Property Name="SI_Me_Quantity" Type="decimal" Precision="16" Scale="2" />
+    <Property Name="Si_Date" Type="datetime" />
+    <Property Name="SI_Flag" Type="int" />
+    <Property Name="SI_Audit_User_ID" Type="varchar" MaxLength="32" />
+    <Property Name="SI_Audit_User_Name" Type="varchar" MaxLength="32" />
+    <Property Name="SI_Audit_Advice" Type="varchar" MaxLength="100" />
+    <Property Name="SI_Remark" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="GDIM_Stock_Out">
+    <Key>
+      <PropertyRef Name="SO_ID" />
+    </Key>
+    <Property Name="SO_ID" Type="varchar" Nullable="false" MaxLength="32" />
+    <Property Name="SO_Me_ID" Type="varchar" MaxLength="32" />
+    <Property Name="SO_Me_Specification" Type="varchar" MaxLength="32" />
+    <Property Name="So_Me_Unit_Price" Type="decimal" Precision="16" Scale="2" />
+    <Property Name="SO_Me_Quantity" Type="decimal" Precision="16" Scale="2" />
+    <Property Name="SO_Date" Type="datetime" />
+    <Property Name="SO_Flag" Type="int" />
+    <Property Name="SO_Audit_User_ID" Type="varchar" MaxLength="32" />
+    <Property Name="SO_Audit_User_Name" Type="varchar" MaxLength="80" />
+    <Property Name="SO_Audit_Advice" Type="varchar" MaxLength="100" />
+    <Property Name="SO_Remark" Type="varchar" MaxLength="100" />
+    <Property Name="SO_SI_ID" Type="varchar" MaxLength="32" />
+  </EntityType>
+  <EntityType Name="GDIM_User">
+    <Key>
+      <PropertyRef Name="User_ID" />
+    </Key>
+    <Property Name="User_ID" Type="varchar" Nullable="false" MaxLength="32" />
+    <Property Name="User_Login_Name" Type="varchar" MaxLength="80" />
+    <Property Name="User_Pass_Word" Type="varchar" MaxLength="255" />
+    <Property Name="User_Name" Type="varchar" MaxLength="80" />
+    <Property Name="User_Level" Type="int" />
+    <Property Name="User_Image" Type="image" />
+  </EntityType>
+  <EntityType Name="GDIM_User_Role">
+    <Key>
+      <PropertyRef Name="User_ID" />
+      <PropertyRef Name="Role_ID" />
+    </Key>
+    <Property Name="User_ID" Type="varchar" Nullable="false" MaxLength="32" />
+    <Property Name="Role_ID" Type="varchar" Nullable="false" MaxLength="32" />
+  </EntityType>
+</Schema>

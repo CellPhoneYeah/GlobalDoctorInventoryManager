@@ -1,0 +1,9 @@
+G:\C#Project\GlobalDoctorInventoryManager\Common\bin\Debug\Common.dll.config
+G:\C#Project\GlobalDoctorInventoryManager\Common\bin\Debug\Common.dll
+G:\C#Project\GlobalDoctorInventoryManager\Common\bin\Debug\Common.pdb
+G:\C#Project\GlobalDoctorInventoryManager\Common\bin\Debug\EntityFramework.dll
+G:\C#Project\GlobalDoctorInventoryManager\Common\bin\Debug\EntityFramework.xml
+G:\C#Project\GlobalDoctorInventoryManager\Common\bin\Debug\zh-Hans\EntityFramework.resources.dll
+G:\C#Project\GlobalDoctorInventoryManager\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+G:\C#Project\GlobalDoctorInventoryManager\Common\obj\Debug\Common.dll
+G:\C#Project\GlobalDoctorInventoryManager\Common\obj\Debug\Common.pdb

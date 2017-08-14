@@ -14,7 +14,7 @@ namespace Common
         /// <typeparam name="EntityType"></typeparam>
         /// <param name="originEntity"></param>
         /// <returns></returns>
-        public static EntityType ShallowCopy<EntityType>(EntityType originEntity)where EntityType:new ()
+        public static EntityType ShallowCopy<EntityType>(EntityType originEntity,EntityType targetEntity)where EntityType:new ()
         {
             Type entityType = typeof(EntityType);
             PropertyInfo[] properties = entityType.GetProperties();
@@ -22,7 +22,7 @@ namespace Common
             foreach (PropertyInfo curProperty in properties)
             {
                 tempPropertyValue = null;
-                tempPropertyValue = curProperty.GetValue(originEntity, null);
+                tempPropertyValue = curProperty.GetValue(targetEntity, null);
                 ReflactHelper.SetValueToObject<EntityType>(tempPropertyValue, curProperty, originEntity);
             }
             return originEntity;
