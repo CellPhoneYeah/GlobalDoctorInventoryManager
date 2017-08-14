@@ -38,6 +38,7 @@
     <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Web" />
@@ -50,78 +51,87 @@
   <ItemGroup>
     <Compile Include="DALUtility\DALConfig.cs" />
     <Compile Include="DALUtility\SQLExecutor.cs" />
-    <Compile Include="Entities\GDIM.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GDIM.Context.tt</DependentUpon>
+    <Compile Include="EntityHelper.cs" />
+    <Compile Include="GDIM_Dict_Medicine.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Entities\GDIM.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GDIM.tt</DependentUpon>
+    <Compile Include="GDIM_Dict_Medicine_Type.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Entities\GDIM.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GDIM.edmx</DependentUpon>
+    <Compile Include="GDIM_Dict_Productor.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Entities\GDIM_Dict_Medicine.cs">
-      <DependentUpon>GDIM.tt</DependentUpon>
+    <Compile Include="GDIM_Dict_Specification.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Entities\GDIM_Dict_Medicine_Type.cs">
-      <DependentUpon>GDIM.tt</DependentUpon>
+    <Compile Include="GDIM_Function.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Entities\GDIM_Dict_Productor.cs">
-      <DependentUpon>GDIM.tt</DependentUpon>
+    <Compile Include="GDIM_Function_Role.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Entities\GDIM_Dict_Specification.cs">
-      <DependentUpon>GDIM.tt</DependentUpon>
+    <Compile Include="GDIM_Inventory.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Entities\GDIM_Function.cs">
-      <DependentUpon>GDIM.tt</DependentUpon>
+    <Compile Include="GDIM_Role.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Entities\GDIM_Function_Role.cs">
-      <DependentUpon>GDIM.tt</DependentUpon>
+    <Compile Include="GDIM_Stock_In.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Entities\GDIM_Role.cs">
-      <DependentUpon>GDIM.tt</DependentUpon>
+    <Compile Include="GDIM_Stock_Out.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Entities\GDIM_Stock_In.cs">
-      <DependentUpon>GDIM.tt</DependentUpon>
+    <Compile Include="GDIM_User.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Entities\GDIM_Stock_Out.cs">
-      <DependentUpon>GDIM.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Entities\GDIM_User.cs">
-      <DependentUpon>GDIM.tt</DependentUpon>
+    <Compile Include="GDIM_User_Role.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="LogUtility\LogConfig.cs" />
     <Compile Include="LogUtility\LogManager.cs" />
+    <Compile Include="Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReflactUtility\ReflactHelper.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <EntityDeploy Include="Entities\GDIM.edmx">
+    <Folder Include="Entities\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>GDIM.Designer.cs</LastGenOutput>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
     </EntityDeploy>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.Config" />
-    <None Include="Entities\GDIM.Context.tt">
+    <None Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>GDIM.edmx</DependentUpon>
-      <LastGenOutput>GDIM.Context.cs</LastGenOutput>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
     </None>
-    <None Include="Entities\GDIM.edmx.diagram">
-      <DependentUpon>GDIM.edmx</DependentUpon>
+    <None Include="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
     </None>
-    <None Include="Entities\GDIM.tt">
+    <None Include="Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>GDIM.edmx</DependentUpon>
-      <LastGenOutput>GDIM.cs</LastGenOutput>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Common.Entities.GDIM_DataEntities.datasource" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
