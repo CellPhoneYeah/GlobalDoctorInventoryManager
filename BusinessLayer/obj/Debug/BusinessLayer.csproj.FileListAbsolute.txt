@@ -1,0 +1,25 @@
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\GlobalDoctorInventoryManager\BusinessLayer\bin\Debug\BusinessLayer.dll.config
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\GlobalDoctorInventoryManager\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\GlobalDoctorInventoryManager\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\GlobalDoctorInventoryManager\BusinessLayer\bin\Debug\EntityFramework.dll
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\GlobalDoctorInventoryManager\BusinessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\GlobalDoctorInventoryManager\BusinessLayer\bin\Debug\EntityFramework.xml
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\GlobalDoctorInventoryManager\BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\GlobalDoctorInventoryManager\BusinessLayer\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\GlobalDoctorInventoryManager\BusinessLayer\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\GlobalDoctorInventoryManager\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\GlobalDoctorInventoryManager\BusinessLayer\obj\Debug\BusinessLayer.pdb
+F:\GDIM\BusinessLayer\bin\Debug\BusinessLayer.dll.config
+F:\GDIM\BusinessLayer\bin\Debug\BusinessLayer.dll
+F:\GDIM\BusinessLayer\bin\Debug\BusinessLayer.pdb
+F:\GDIM\BusinessLayer\bin\Debug\Common.dll
+F:\GDIM\BusinessLayer\bin\Debug\EntityFramework.dll
+F:\GDIM\BusinessLayer\bin\Debug\EntityFramework.SqlServer.dll
+F:\GDIM\BusinessLayer\bin\Debug\Common.pdb
+F:\GDIM\BusinessLayer\bin\Debug\EntityFramework.xml
+F:\GDIM\BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
+F:\GDIM\BusinessLayer\bin\Debug\zh-Hans\EntityFramework.resources.dll
+F:\GDIM\BusinessLayer\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+F:\GDIM\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+F:\GDIM\BusinessLayer\obj\Debug\BusinessLayer.dll
+F:\GDIM\BusinessLayer\obj\Debug\BusinessLayer.pdb

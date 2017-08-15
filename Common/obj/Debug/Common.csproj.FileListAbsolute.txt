@@ -7,3 +7,9 @@ G:\C#Project\GlobalDoctorInventoryManager\Common\bin\Debug\zh-Hans\EntityFramewo
 G:\C#Project\GlobalDoctorInventoryManager\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
 G:\C#Project\GlobalDoctorInventoryManager\Common\obj\Debug\Common.dll
 G:\C#Project\GlobalDoctorInventoryManager\Common\obj\Debug\Common.pdb
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\GlobalDoctorInventoryManager\Common\bin\Debug\Common.dll
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\GlobalDoctorInventoryManager\Common\bin\Debug\Common.pdb
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\GlobalDoctorInventoryManager\Common\obj\Debug\Common.dll
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\GlobalDoctorInventoryManager\Common\obj\Debug\Common.pdb
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\GlobalDoctorInventoryManager\Build\Common.dll
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\GlobalDoctorInventoryManager\Build\Common.pdb

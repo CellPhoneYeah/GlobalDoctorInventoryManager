@@ -1,0 +1,24 @@
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\GlobalDoctorInventoryManager\GDIMServer\obj\Debug\GDIMServer.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\GlobalDoctorInventoryManager\GDIMServer\bin\GDIMServer.dll
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\GlobalDoctorInventoryManager\GDIMServer\bin\GDIMServer.pdb
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\GlobalDoctorInventoryManager\GDIMServer\bin\BusinessLayer.dll
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\GlobalDoctorInventoryManager\GDIMServer\bin\Common.dll
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\GlobalDoctorInventoryManager\GDIMServer\bin\EntityFramework.dll
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\GlobalDoctorInventoryManager\GDIMServer\bin\BusinessLayer.pdb
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\GlobalDoctorInventoryManager\GDIMServer\bin\Common.pdb
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\GlobalDoctorInventoryManager\GDIMServer\bin\EntityFramework.xml
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\GlobalDoctorInventoryManager\GDIMServer\bin\zh-Hans\EntityFramework.resources.dll
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\GlobalDoctorInventoryManager\GDIMServer\obj\Debug\GDIMServer.dll
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\GlobalDoctorInventoryManager\GDIMServer\obj\Debug\GDIMServer.pdb
+F:\GDIM\GDIMServer\bin\GDIMServer.dll
+F:\GDIM\GDIMServer\bin\GDIMServer.pdb
+F:\GDIM\GDIMServer\bin\BusinessLayer.dll
+F:\GDIM\GDIMServer\bin\Common.dll
+F:\GDIM\GDIMServer\bin\EntityFramework.dll
+F:\GDIM\GDIMServer\bin\BusinessLayer.pdb
+F:\GDIM\GDIMServer\bin\Common.pdb
+F:\GDIM\GDIMServer\bin\EntityFramework.xml
+F:\GDIM\GDIMServer\bin\zh-Hans\EntityFramework.resources.dll
+F:\GDIM\GDIMServer\obj\Debug\GDIMServer.csprojResolveAssemblyReference.cache
+F:\GDIM\GDIMServer\obj\Debug\GDIMServer.dll
+F:\GDIM\GDIMServer\obj\Debug\GDIMServer.pdb

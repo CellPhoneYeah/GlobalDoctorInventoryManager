@@ -4,7 +4,7 @@ using System.Configuration;
 using System.Linq;
 using System.Text;
 
-namespace Common
+namespace CommonUtility
 {
     public class DALConfig
     {

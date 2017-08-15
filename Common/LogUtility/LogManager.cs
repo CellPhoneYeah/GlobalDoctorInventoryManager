@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace Common
+namespace CommonUtility
 {
     public class LogManager
     {

@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GDIM_DataModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="GDIM_DataEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="GDIM_Dict_Medicine" EntityType="GDIM_DataModel.GDIM_Dict_Medicine" />
+    <EntitySet Name="GDIM_Dict_Medicine_Type" EntityType="GDIM_DataModel.GDIM_Dict_Medicine_Type" />
+    <EntitySet Name="GDIM_Dict_Productor" EntityType="GDIM_DataModel.GDIM_Dict_Productor" />
+    <EntitySet Name="GDIM_Dict_Specification" EntityType="GDIM_DataModel.GDIM_Dict_Specification" />
+    <EntitySet Name="GDIM_Function" EntityType="GDIM_DataModel.GDIM_Function" />
+    <EntitySet Name="GDIM_Function_Role" EntityType="GDIM_DataModel.GDIM_Function_Role" />
+    <EntitySet Name="GDIM_Inventory" EntityType="GDIM_DataModel.GDIM_Inventory" />
+    <EntitySet Name="GDIM_Role" EntityType="GDIM_DataModel.GDIM_Role" />
+    <EntitySet Name="GDIM_Stock_In" EntityType="GDIM_DataModel.GDIM_Stock_In" />
+    <EntitySet Name="GDIM_Stock_Out" EntityType="GDIM_DataModel.GDIM_Stock_Out" />
+    <EntitySet Name="GDIM_User" EntityType="GDIM_DataModel.GDIM_User" />
+    <EntitySet Name="GDIM_User_Role" EntityType="GDIM_DataModel.GDIM_User_Role" />
+  </EntityContainer>
+  <EntityType Name="GDIM_Dict_Medicine">
+    <Key>
+      <PropertyRef Name="Me_ID" />
+    </Key>
+    <Property Name="Me_ID" Type="String" Nullable="false" MaxLength="32" Unicode="false" FixedLength="false" />
+    <Property Name="Me_Trade_Name_E" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+    <Property Name="Me_Chemical_Name" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+    <Property Name="Me_Trade_Name_C" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+    <Property Name="Me_Specification_ID" Type="String" MaxLength="32" Unicode="false" FixedLength="false" />
+    <Property Name="Me_Status" Type="Int32" />
+    <Property Name="Me_Unit_Price" Type="Decimal" Precision="16" Scale="2" />
+    <Property Name="Me_Productor_ID" Type="String" MaxLength="32" Unicode="false" FixedLength="false" />
+    <Property Name="Me_Type_ID" Type="String" MaxLength="32" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="GDIM_Dict_Medicine_Type">
+    <Key>
+      <PropertyRef Name="Me_Type_Id" />
+    </Key>
+    <Property Name="Me_Type_Id" Type="String" Nullable="false" MaxLength="32" Unicode="false" FixedLength="false" />
+    <Property Name="Me_Type_Name" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="GDIM_Dict_Productor">
+    <Key>
+      <PropertyRef Name="Pro_ID" />
+    </Key>
+    <Property Name="Pro_ID" Type="String" Nullable="false" MaxLength="32" Unicode="false" FixedLength="false" />
+    <Property Name="Pro_name" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="GDIM_Dict_Specification">
+    <Key>
+      <PropertyRef Name="Sp_ID" />
+    </Key>
+    <Property Name="Sp_ID" Type="String" Nullable="false" MaxLength="32" Unicode="false" FixedLength="false" />
+    <Property Name="Sp_Name" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="GDIM_Function">
+    <Key>
+      <PropertyRef Name="Func_ID" />
+    </Key>
+    <Property Name="Func_ID" Type="String" Nullable="false" MaxLength="32" Unicode="false" FixedLength="false" />
+    <Property Name="Func_Name" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+    <Property Name="Func_Code" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Func_Type" Type="String" MaxLength="32" Unicode="false" FixedLength="false" />
+    <Property Name="Func_Parent_ID" Type="String" MaxLength="32" Unicode="false" FixedLength="false" />
+    <Property Name="Func_Sequence_Number" Type="Int32" />
+  </EntityType>
+  <EntityType Name="GDIM_Function_Role">
+    <Key>
+      <PropertyRef Name="Func_ID" />
+      <PropertyRef Name="Role_ID" />
+    </Key>
+    <Property Name="Func_ID" Type="String" Nullable="false" MaxLength="32" Unicode="false" FixedLength="false" />
+    <Property Name="Role_ID" Type="String" Nullable="false" MaxLength="32" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="GDIM_Inventory">
+    <Key>
+      <PropertyRef Name="Inv_ID" />
+    </Key>
+    <Property Name="Inv_ID" Type="String" Nullable="false" MaxLength="32" Unicode="false" FixedLength="false" />
+    <Property Name="Inv_Me_ID" Type="String" MaxLength="32" Unicode="false" FixedLength="false" />
+    <Property Name="Inv_Me_Specification_ID" Type="String" MaxLength="32" Unicode="false" FixedLength="false" />
+    <Property Name="Inv_Me_Unit_Price" Type="Decimal" Precision="16" Scale="2" />
+    <Property Name="Inv_Me_Quantity" Type="Decimal" Precision="16" Scale="2" />
+    <Property Name="Inv_Date" Type="DateTime" Precision="3" />
+    <Property Name="Inv_Remark" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Inv_SI_ID" Type="String" MaxLength="32" Unicode="false" FixedLength="false" />
+    <Property Name="Inv_Flag" Type="Int32" />
+  </EntityType>
+  <EntityType Name="GDIM_Role">
+    <Key>
+      <PropertyRef Name="Role_ID" />
+    </Key>
+    <Property Name="Role_ID" Type="String" Nullable="false" MaxLength="32" Unicode="false" FixedLength="false" />
+    <Property Name="Role_Name" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+    <Property Name="Role_Description" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="GDIM_Stock_In">
+    <Key>
+      <PropertyRef Name="SI_ID" />
+    </Key>
+    <Property Name="SI_ID" Type="String" Nullable="false" MaxLength="32" Unicode="false" FixedLength="false" />
+    <Property Name="SI_Me_ID" Type="String" MaxLength="32" Unicode="false" FixedLength="false" />
+    <Property Name="SI_Me_Specification_ID" Type="String" MaxLength="32" Unicode="false" FixedLength="false" />
+    <Property Name="SI_Me_Unit_Price" Type="Decimal" Precision="16" Scale="2" />
+    <Property Name="SI_Me_Quantity" Type="Decimal" Precision="16" Scale="2" />
+    <Property Name="Si_Date" Type="DateTime" Precision="3" />
+    <Property Name="SI_Flag" Type="Int32" />
+    <Property Name="SI_Audit_User_ID" Type="String" MaxLength="32" Unicode="false" FixedLength="false" />
+    <Property Name="SI_Audit_User_Name" Type="String" MaxLength="32" Unicode="false" FixedLength="false" />
+    <Property Name="SI_Audit_Advice" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="SI_Remark" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="GDIM_Stock_Out">
+    <Key>
+      <PropertyRef Name="SO_ID" />
+    </Key>
+    <Property Name="SO_ID" Type="String" Nullable="false" MaxLength="32" Unicode="false" FixedLength="false" />
+    <Property Name="SO_Me_ID" Type="String" MaxLength="32" Unicode="false" FixedLength="false" />
+    <Property Name="SO_Me_Specification" Type="String" MaxLength="32" Unicode="false" FixedLength="false" />
+    <Property Name="So_Me_Unit_Price" Type="Decimal" Precision="16" Scale="2" />
+    <Property Name="SO_Me_Quantity" Type="Decimal" Precision="16" Scale="2" />
+    <Property Name="SO_Date" Type="DateTime" Precision="3" />
+    <Property Name="SO_Flag" Type="Int32" />
+    <Property Name="SO_Audit_User_ID" Type="String" MaxLength="32" Unicode="false" FixedLength="false" />
+    <Property Name="SO_Audit_User_Name" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+    <Property Name="SO_Audit_Advice" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="SO_Remark" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="SO_SI_ID" Type="String" MaxLength="32" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="GDIM_User">
+    <Key>
+      <PropertyRef Name="User_ID" />
+    </Key>
+    <Property Name="User_ID" Type="String" Nullable="false" MaxLength="32" Unicode="false" FixedLength="false" />
+    <Property Name="User_Login_Name" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+    <Property Name="User_Pass_Word" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="User_Name" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+    <Property Name="User_Level" Type="Int32" />
+    <Property Name="User_Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="GDIM_User_Role">
+    <Key>
+      <PropertyRef Name="User_ID" />
+      <PropertyRef Name="Role_ID" />
+    </Key>
+    <Property Name="User_ID" Type="String" Nullable="false" MaxLength="32" Unicode="false" FixedLength="false" />
+    <Property Name="Role_ID" Type="String" Nullable="false" MaxLength="32" Unicode="false" FixedLength="false" />
+  </EntityType>
+</Schema>

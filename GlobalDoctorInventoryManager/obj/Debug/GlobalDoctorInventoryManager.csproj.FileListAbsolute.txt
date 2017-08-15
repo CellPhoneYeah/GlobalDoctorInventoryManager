@@ -1,1 +1,2 @@
 C:\Users\Administrator\Documents\Visual Studio 2012\Projects\GlobalDoctorInventoryManager\GlobalDoctorInventoryManager\bin\Debug\GlobalDoctorInventoryManager.exe.config
+C:\Users\Administrator\Documents\Visual Studio 2012\Projects\GlobalDoctorInventoryManager\Build\GlobalDoctorInventoryManager.exe.config
