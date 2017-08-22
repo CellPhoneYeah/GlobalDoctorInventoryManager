@@ -22,3 +22,5 @@ F:\GDIM\GDIMServer\bin\zh-Hans\EntityFramework.resources.dll
 F:\GDIM\GDIMServer\obj\Debug\GDIMServer.csprojResolveAssemblyReference.cache
 F:\GDIM\GDIMServer\obj\Debug\GDIMServer.dll
 F:\GDIM\GDIMServer\obj\Debug\GDIMServer.pdb
+F:\GDIM\GDIMServer\bin\ServerCommon.dll
+F:\GDIM\GDIMServer\bin\ServerCommon.pdb

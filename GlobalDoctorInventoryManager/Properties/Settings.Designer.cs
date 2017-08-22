@@ -22,5 +22,15 @@ namespace GlobalDoctorInventoryManager.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost:15420/Services/Test.svc")]
+        public string GlobalDoctorInventoryManager_TestSvc_Test {
+            get {
+                return ((string)(this["GlobalDoctorInventoryManager_TestSvc_Test"]));
+            }
+        }
     }
 }

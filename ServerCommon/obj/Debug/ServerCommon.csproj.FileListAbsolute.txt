@@ -1,0 +1,10 @@
+F:\GDIM\ServerCommon\bin\Debug\ServerCommon.dll
+F:\GDIM\ServerCommon\bin\Debug\ServerCommon.pdb
+F:\GDIM\ServerCommon\bin\Debug\BusinessLayer.dll
+F:\GDIM\ServerCommon\bin\Debug\EntityFramework.dll
+F:\GDIM\ServerCommon\bin\Debug\BusinessLayer.pdb
+F:\GDIM\ServerCommon\bin\Debug\EntityFramework.xml
+F:\GDIM\ServerCommon\bin\Debug\zh-Hans\EntityFramework.resources.dll
+F:\GDIM\ServerCommon\obj\Debug\ServerCommon.csprojResolveAssemblyReference.cache
+F:\GDIM\ServerCommon\obj\Debug\ServerCommon.dll
+F:\GDIM\ServerCommon\obj\Debug\ServerCommon.pdb

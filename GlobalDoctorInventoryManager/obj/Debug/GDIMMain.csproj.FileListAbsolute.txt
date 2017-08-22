@@ -1,2 +1,10 @@
 C:\Users\Administrator\Documents\Visual Studio 2012\Projects\GlobalDoctorInventoryManager\Build\GlobalDoctorInventoryManager.exe.config
 F:\GDIM\Build\GlobalDoctorInventoryManager.exe.config
+F:\GDIM\GlobalDoctorInventoryManager\obj\Debug\GDIMMain.csprojResolveAssemblyReference.cache
+F:\GDIM\GlobalDoctorInventoryManager\obj\Debug\GlobalDoctorInventoryManager.Form1.resources
+F:\GDIM\GlobalDoctorInventoryManager\obj\Debug\GlobalDoctorInventoryManager.Properties.Resources.resources
+F:\GDIM\GlobalDoctorInventoryManager\obj\Debug\GDIMMain.csproj.GenerateResource.Cache
+F:\GDIM\Build\GlobalDoctorInventoryManager.exe
+F:\GDIM\Build\GlobalDoctorInventoryManager.pdb
+F:\GDIM\GlobalDoctorInventoryManager\obj\Debug\GlobalDoctorInventoryManager.exe
+F:\GDIM\GlobalDoctorInventoryManager\obj\Debug\GlobalDoctorInventoryManager.pdb

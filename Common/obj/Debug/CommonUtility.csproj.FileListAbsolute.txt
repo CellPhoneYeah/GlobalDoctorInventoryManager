@@ -6,3 +6,4 @@ F:\GDIM\Build\Common.dll
 F:\GDIM\Build\Common.pdb
 F:\GDIM\Common\obj\Debug\Common.dll
 F:\GDIM\Common\obj\Debug\Common.pdb
+F:\GDIM\Common\obj\Debug\CommonUtility.csprojResolveAssemblyReference.cache

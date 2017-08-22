@@ -7,6 +7,7 @@ using System.Text;
 using BusinessLayer.Entities;
 using BusinessLayer;
 using CommonUtility;
+using ServerCommon;
 
 namespace GDIMServer
 {

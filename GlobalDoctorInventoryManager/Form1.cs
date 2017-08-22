@@ -1,4 +1,9 @@
-﻿using System;
+﻿using BusinessLayer.Entities;
+using Common;
+using CommonUtility;
+using GlobalDoctorInventoryManager.TestSvc;
+using ServerCommon;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,5 +20,23 @@ namespace GlobalDoctorInventoryManager
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                Test test = new Test();
+                string temp = test.DoWork();
+                Func<GDIM_User, bool> conditions = delegate(GDIM_User user) { return true; };
+                string remoteAddress = ConfigHelper.GetSettingByName("RemoteServer");
+                WcfChannelFactory.ExecuteMethodWS<ITest>(remoteAddress, "DoWork");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+           
+        }
+
     }
 }
