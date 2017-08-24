@@ -9,7 +9,7 @@ namespace Common
     public interface IWcfRefInvoker
     {
         Binding GetBinding();
-        
-        T CreateWCFServiceByUrl<T>(string url,string binding)
+
+        T CreateWCFServiceByUrl<T>(string url);
     }
 }

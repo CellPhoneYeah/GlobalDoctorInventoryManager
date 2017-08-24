@@ -29,7 +29,8 @@ namespace GlobalDoctorInventoryManager
                 string temp = test.DoWork();
                 Func<GDIM_User, bool> conditions = delegate(GDIM_User user) { return true; };
                 string remoteAddress = ConfigHelper.GetSettingByName("RemoteServer");
-                WcfChannelFactory.ExecuteMethodWS<ITest>(remoteAddress, "DoWork");
+                ITest testSvc = WcfChannelFactory.GetRemoteInstance<ITest>(BindingTypes.Basic, remoteAddress);
+                string tempStr = testSvc.DoWork();
             }
             catch (Exception ex)
             {

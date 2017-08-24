@@ -63,6 +63,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReflactUtility\ReflactHelper.cs" />
     <Compile Include="WcfUtility\WcfChannelFactory.cs" />
+    <Compile Include="WcfUtility\IWcfRefInvoker.cs" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
